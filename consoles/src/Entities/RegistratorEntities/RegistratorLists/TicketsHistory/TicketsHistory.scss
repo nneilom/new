@@ -1,0 +1,265 @@
+.ticketsHistory {
+  display: grid;
+  grid-template-columns: 45% 52%;
+  justify-content: space-between;
+
+  &__list {
+    height: 585px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+
+    .ticketHistory__header {
+      h2 {
+        color: #161616;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 30px 40px 0 40px;
+      }
+      .ticketHistory__date {
+        display: flex;
+        align-items: center;
+        padding: 30px 40px;
+        gap: 10px;
+        font-size: 18px;
+        div {
+          border-radius: 10px;
+          background: #f1f1f1;
+          width: 142px;
+          height: 44px;
+          color: #272dc8;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+      .ticketHistory__calendar__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ticketHistory__search {
+        display: flex;
+        padding: 0px 18px;
+
+        .search__wrapper {
+          width: 100%;
+          border-radius: 10px;
+          background: #f1f1f1;
+          display: grid;
+          grid-template-columns: 95% 5%;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 20px;
+        }
+        input {
+          outline: none;
+          border: none;
+          background-color: transparent;
+          height: 30px;
+          color: #040623;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        ::placeholder {
+          color: #040623;
+          font-size: 18px;
+          font-weight: 500;
+          opacity: 0.5;
+        }
+      }
+    }
+    .ticketsHistory__list_headers {
+      display: grid;
+      grid-template-columns: 75px 175px 130px;
+      justify-content: space-between;
+      padding: 30px 18px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      span {
+        font-size: 16px;
+        opacity: 0.5;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .ticketHistory__list_wrapper {
+    height: 50%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .ticketHistory__list_warning {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      font-weight: 500;
+    }
+
+    .ticketsHistory__item_odd {
+      background-color: #f0f0f0;
+    }
+
+    .ticketsHistory__item_even,
+    .ticketsHistory__item_odd {
+      padding: 14px 18px;
+      display: grid;
+      grid-template-columns: 75px 175px 130px;
+      justify-content: space-between;
+      align-items: center;
+      .ticket__indexNumber {
+        display: flex;
+        justify-content: space-between;
+      }
+      span {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 1;
+      }
+      .ticket__service {
+        opacity: 0.5;
+      }
+
+      .ticket__served,
+      .ticket__implied {
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 15px;
+        background-color: transparent;
+        height: 30px;
+        outline: none;
+      }
+      .ticket__served {
+        border: 2px solid #1fa83d;
+      }
+      .ticket__implied {
+        border: 2px solid #d62222;
+      }
+    }
+  }
+  // вазвуазудазудазд
+  &__operatorsList {
+    height: 475px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ticketHistory__header {
+      h2 {
+        color: #161616;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 30px 40px 0 40px;
+      }
+    }
+    .ticketsHistory__operatorsList_headers {
+      display: grid;
+      grid-template-columns: 150px 210px;
+      justify-content: space-between;
+      padding: 30px 18px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item_odd-op {
+    background-color: #f0f0f0;
+  }
+
+  &__item_even-op,
+  &__item_odd-op {
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 150px 210px;
+    justify-content: space-between;
+    align-items: center;
+    .ticket__indexNumber {
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
+  .selected__item {
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 150px 210px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c6c6ff;
+
+    .ticket__indexNumber {
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
+  .operators__actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 18px;
+    button {
+      width: 290px;
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .implied_disabled {
+      border: 1px solid rgba(252, 19, 19, 0.4);
+      color: rgba(252, 19, 19, 0.4);
+      font-size: 18px;
+      font-weight: 600;
+      background-color: transparent;
+    }
+    .complete_disabled {
+      background-color: rgba(31, 168, 61, 0.4);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+    }
+    .implied_enabled {
+      border: 1px solid #fc1313;
+      color: #fc1313;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: transparent;
+    }
+    .complete_enabled {
+      background-color: #1fa83d;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+    }
+  }
+}

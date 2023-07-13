@@ -1,0 +1,12 @@
+.app__layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .app__container {
+    display: flex;
+    .app__main-content {
+      padding: 85px 50px 0 172px;
+      width: 100%;
+    }
+  }
+}

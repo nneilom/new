@@ -1,0 +1,30 @@
+.checkbox {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 20px;
+}
+.checkbox-default {
+  background-color: transparent;
+  border: 1px solid #0d0d0e;
+  transition: 0.5s;
+}
+.checkbox-selected {
+  background-color: #6047ff;
+  border: 2px solid #6047ff;
+  transition: 0.5s;
+}
+.checkbox-excluded {
+  background-color: #ff4747;
+  border: 2px solid #ff4747;
+  transition: 0.5s;
+}
+.goplus {
+  color: white;
+  transform: rotate(45deg);
+}

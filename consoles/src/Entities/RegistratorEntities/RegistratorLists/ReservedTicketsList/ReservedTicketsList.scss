@@ -1,0 +1,150 @@
+.reservedTickets {
+  display: grid;
+  grid-template-columns: 45% 52%;
+  justify-content: space-between;
+
+  &__list {
+    height: 585px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+
+    .reservedTickets__header {
+      h2 {
+        color: #161616;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 30px 40px 0 40px;
+      }
+    }
+    .reservedTickets__list_headers {
+      display: grid;
+      grid-template-columns: 75px 175px 130px;
+      justify-content: space-between;
+      padding: 30px 18px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__item_even,
+  &__item_odd {
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 75px 175px 130px;
+    justify-content: space-between;
+    align-items: center;
+    .register__indexNumber {
+      display: flex;
+      justify-content: space-between;
+    }
+    span {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 700;
+      opacity: 1;
+    }
+    .register__service {
+      opacity: 0.5;
+    }
+
+    .register__served,
+    .register__implied {
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 15px;
+      background-color: transparent;
+      height: 30px;
+      outline: none;
+    }
+    .register__served {
+      border: 2px solid #1fa83d;
+    }
+    .register__implied {
+      border: 2px solid #d62222;
+    }
+  }
+
+  // вазвуазудазудазд
+  &__selected-register {
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .reservedTickets__header {
+      h2 {
+        color: #161616;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 30px 40px 0 40px;
+      }
+    }
+    .reservedTickets__selected-register_headers {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 18px;
+    }
+
+    span {
+      font-size: 18px;
+      display: flex;
+      margin: 10px 0;
+      gap: 8px;
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 18px;
+  }
+  .register__edit {
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: 10px;
+      background: #1fa83d;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      height: 44px;
+      padding: 10px;
+      width: 100%;
+      margin: 20px 0;
+    }
+    padding: 0 18px;
+  }
+  .register__create {
+    display: flex;
+    justify-content: center;
+    padding: 0 18px;
+    button {
+      margin: 15px 0;
+      border-radius: 10px;
+      background: #004da8;
+      width: 100%;
+      height: 44px;
+      padding: 0px 20px;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

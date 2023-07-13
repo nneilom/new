@@ -1,0 +1,46 @@
+button {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.ui__btn_variant-default {
+  color: white;
+  background-color: #6047ff;
+  border: none;
+  transition: 0.5s;
+}
+
+.ui__btn_variant-default:hover {
+  box-shadow: 0px 0px 16px rgba(70, 69, 77, 0.8);
+}
+
+.ui__btn_variant-outlined {
+  color: #ff0000;
+  background-color: transparent;
+  border: 2px solid #f2efff;
+  transition: 0.5s;
+}
+
+.ui__btn_variant-outlined:hover {
+  box-shadow: 0px 0px 16px rgba(70, 69, 77, 0.8);
+  background-color: #ff0b0b;
+  color: #FFFF;
+}
+
+.ui__btn_size-default {
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.ui__btn_size-big {
+  padding: 12px 87px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.ui__btn_size-medium {
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 24px;
+}

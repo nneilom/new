@@ -1,0 +1,48 @@
+{
+  "name": "seo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite --open --port 3000 --host",
+    "start:term": "vite --open terminal.html --port 3000",
+    "start:mon": "vite --open monitor.html",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.5",
+    "@mui/x-date-pickers": "^6.9.1",
+    "@react-icons/all-files": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0"
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "react-redux": "^8.1.0",
+    "react-router": "^6.12.1",
+    "react-router-dom": "^6.12.1",
+    "sass": "^1.63.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
+}

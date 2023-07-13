@@ -1,0 +1,44 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  &__wrapper {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px 18px 150px;
+
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+      width: 11%;
+      img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .navbar__window-number {
+      h3 {
+        color: var(--dark, #161616);
+        font-size: 24px;
+      }
+    }
+    .navbar__right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      span {
+        color: var(--rsk-blue, #272dc8);
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .navbar__avatar {
+        cursor: pointer;
+      }
+    }
+  }
+}

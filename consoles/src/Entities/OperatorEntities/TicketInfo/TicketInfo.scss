@@ -1,0 +1,135 @@
+.ticketInfo {
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .ticketInfo__warning {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #161616;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .ticketInfo__header {
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__ticketNumber {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #161616;
+  }
+  &__service {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__time_header {
+    span {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 16px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__time {
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    .serving__time,
+    .serving__time-standard {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      gap: 10px;
+      div {
+        border-radius: 5px;
+        background: #f0f0f0;
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+  &__client_actions {
+    display: flex;
+    flex-direction: column;
+    button {
+      border-radius: 10px;
+      background: #c6c6ff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      color: #161616;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .client__callTicket_action {
+      display: flex;
+      flex-direction: column;
+      span {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    .client__actionsWithTicket {
+      span {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        button {
+          margin: 10px 5px;
+        }
+        .toTheEndOfList__action {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+        }
+        .toTheWaitingList__action {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 3;
+        }
+        .impliedTicket__action {
+          color: #fc1313;
+          font-size: 18px;
+          font-weight: 600;
+          border: 1px solid #fc1313;
+          background-color: transparent;
+        }
+        .completeTicket__action {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 600;
+          background-color: #1fa83d;
+        }
+        .transferToAnotherOperator__action {
+          button {
+            width: 95.5%;
+          }
+        }
+      }
+    }
+  }
+}

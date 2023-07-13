@@ -1,0 +1,59 @@
+.employeesList {
+  border-radius: 15px;
+  width: 100%;
+  background-color: #fff;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    button {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 10px;
+      background: var(--official-rsk-color, #004da8);
+      padding: 17px 25px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+
+    .employeesList__item_left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 60%;
+      .item_avatar {
+        cursor: pointer;
+        font-size: 35px;
+      }
+    }
+
+    .employeesList__item_right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 5%;
+      .item_icon {
+        cursor: pointer;
+        color: #004da8;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+}

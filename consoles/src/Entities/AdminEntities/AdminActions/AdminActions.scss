@@ -1,0 +1,26 @@
+.adminActionBottom {
+  justify-content: space-between;
+  margin-bottom: 45px;
+  .adminActionBottom_lists {
+    display: flex;
+    gap: 20px;
+    button {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 45px;
+      border-radius: 15px;
+      background-color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .adminActionBottom__onList {
+      background-color: #004da8;
+      color: white;
+    }
+  }
+}

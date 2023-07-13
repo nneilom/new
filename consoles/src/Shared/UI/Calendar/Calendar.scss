@@ -1,0 +1,91 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  .calendar__month {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: white;
+    .calendar__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .calendar__arrows_wrapper {
+      display: flex;
+      .calendar__prev,
+      .calendar__next {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        border-radius: 50%;
+      }
+      .calendar__next:hover {
+        background-color: rgb(232, 232, 232);
+      }
+      .calendar__prev:hover {
+        background-color: rgb(232, 232, 232);
+      }
+    }
+    .calendar__weekdays {
+      display: grid;
+      grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+      justify-content: space-between;
+      margin: 15px 0;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .calendar__days_wrapper {
+      display: grid;
+      grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+
+      .calendar__day {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          color: black;
+        }
+      }
+      .calendar__currDay {
+        background-color: #666;
+        border-radius: 50%;
+        span {
+          color: white;
+        }
+      }
+      .calendar__selected-day {
+        background-color: #004da8;
+        border-radius: 50%;
+        span {
+          color: white;
+        }
+      }
+    }
+  }
+  .calendar__month_active {
+    z-index: 1;
+  }
+}
